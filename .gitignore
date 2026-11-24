@@ -1,0 +1,25 @@
+# Python pipeline
+pipeline/.venv/
+pipeline/__pycache__/
+pipeline/.pytest_cache/
+pipeline/nbs_*_probe.json
+pipeline/nbs_*_dump.json
+pipeline/nbs_prov_indicators.json
+pipeline/nbs_nat_indicators.json
+pipeline/warehouse/*.duckdb
+pipeline/warehouse/*.duckdb.wal
+*.pyc
+
+# Next.js web app
+web/node_modules/
+web/.next/
+web/out/
+web/.vercel/
+web/tsconfig.tsbuildinfo
+web/playwright-report/
+web/test-results/
+
+# OS / Editor
+.DS_Store
+*.log
+.env*.local
