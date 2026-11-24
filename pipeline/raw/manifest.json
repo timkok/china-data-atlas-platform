@@ -1,0 +1,120 @@
+{
+  "fetched_at": "2026-11-24T02:40:44Z",
+  "date_range": "2000YY-2025YY",
+  "source_api_base": "https://data.stats.gov.cn/dg/website/publicrelease/web/external",
+  "indicators": {
+    "population": {
+      "indicator_id": "CHN_POP_RESIDENT",
+      "file": "population.json",
+      "sha256": "f2b7ce4b91565af6a7cc39dc28471e2db753a8ddaeed10d5eaf4ec50c79d287e",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "birth-rate": {
+      "indicator_id": "CHN_POP_BIRTH_RATE",
+      "file": "birth-rate.json",
+      "sha256": "f012c89d84b7c3c8a03be93ceca6d3e95b1b27fac0930b7e1a230571af053f4e",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "natural-growth-rate": {
+      "indicator_id": "CHN_POP_NATURAL_GROWTH",
+      "file": "natural-growth-rate.json",
+      "sha256": "32e98a1909700f2d7833dd64609790545606fbc3eb9575fd0adb52d8c8dc26b8",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "urbanization-rate": {
+      "indicator_id": "CHN_POP_URBANIZATION",
+      "file": "urbanization-rate.json",
+      "sha256": "3125e41129ff723e2abf2ac1e004b5349f513b8a79517c6b827dbbb1b9cf622e",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "aging-65-share": {
+      "indicator_id": "CHN_POP_AGING_65",
+      "file": "aging-65-share.json",
+      "sha256": "da3440004ded996848982d03626c31ae69d6b06cc7f30787b601300a16ba0e81",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "gdp": {
+      "indicator_id": "CHN_ECON_GDP",
+      "file": "gdp.json",
+      "sha256": "8276d1ea5ab3838e2e0a1b06b5bf053eca0f49a278ce188f35bd44098dcd5069",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "gdp-per-capita": {
+      "indicator_id": "CHN_ECON_GDP_PER_CAPITA",
+      "file": "gdp-per-capita.json",
+      "sha256": "1415bc8cba1301667e3555e4e338b2e41de843bb43213818b29c9ea3c770e04c",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "disposable-income": {
+      "indicator_id": "CHN_ECON_INCOME",
+      "file": "disposable-income.json",
+      "sha256": "2d3a7c4d2491dd1fec1dc8cf27a3bca73c1a255f7410fc568766670278129819",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "consumption-expenditure": {
+      "indicator_id": "CHN_ECON_CONSUMPTION",
+      "file": "consumption-expenditure.json",
+      "sha256": "0e8322c02017d6fa7180ca4eaac2351b5eef46596fc3cbd7ca35709ee50fb2ff",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "retail-sales": {
+      "indicator_id": "CHN_ECON_RETAIL",
+      "file": "retail-sales.json",
+      "sha256": "ba8f004ab8bd23da086b936e5c64245c377e72dc08115916ede3bb36d5e1d404",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "higher-ed-enrollment": {
+      "indicator_id": "CHN_EDU_HIGHER_ENROLLMENT",
+      "file": "higher-ed-enrollment.json",
+      "sha256": "75fbabe96bafcb386e77ec03eb0d83fa4c74b9d498d11cc01f2beb3afef2a231",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "higher-ed-institutions": {
+      "indicator_id": "CHN_EDU_HIGHER_SCHOOLS",
+      "file": "higher-ed-institutions.json",
+      "sha256": "c7f36112bf07a45fdf09c15d561655ac95366aae918de40a4b1b150f4ceb04b0",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "physicians-per-1k": {
+      "indicator_id": "CHN_HLTH_PHYSICIANS_1K",
+      "file": "physicians-per-1k.json",
+      "sha256": "eef86fa7c00e729bc7100b406831c07e203e535b4eb72bf82e00ba5143e42554",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    },
+    "hospital-beds-per-1k": {
+      "indicator_id": "CHN_HLTH_BEDS_1K",
+      "file": "hospital-beds-per-1k.json",
+      "sha256": "f48e9f7e58988453d11ccd7096cb2b2681db6ba58ebba0b17c98cd20542c1cf9",
+      "fetched_at": "2026-11-24T02:40:44Z",
+      "prov_year_blocks": 26,
+      "nat_year_blocks": 26
+    }
+  },
+  "areas_sha256": "76cb8d553a182af1f7782a0c8ae3cd721773a684cde707481b1ce68415df7f11"
+}

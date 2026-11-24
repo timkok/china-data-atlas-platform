@@ -1,0 +1,429 @@
+{
+  "national": {
+    "code": "000000",
+    "nbs_code": "000000000000",
+    "name_zh": "全国",
+    "short_zh": "全国",
+    "name_en": "China (National)",
+    "short_en": "China"
+  },
+  "region_groups": [
+    {
+      "id": "north",
+      "name_zh": "华北",
+      "full_zh": "华北地区",
+      "name_en": "North China",
+      "order": 1,
+      "provinces": [
+        "110000",
+        "120000",
+        "130000",
+        "140000",
+        "150000"
+      ],
+      "definition_zh": "包含北京、天津、河北、山西、内蒙古（5个省级行政区）。按中国传统七大自然地理大区划分。"
+    },
+    {
+      "id": "northeast",
+      "name_zh": "东北",
+      "full_zh": "东北地区",
+      "name_en": "Northeast China",
+      "order": 2,
+      "provinces": [
+        "210000",
+        "220000",
+        "230000"
+      ],
+      "definition_zh": "包含辽宁、吉林、黑龙江（3个省级行政区）。"
+    },
+    {
+      "id": "east",
+      "name_zh": "华东",
+      "full_zh": "华东地区",
+      "name_en": "East China",
+      "order": 3,
+      "provinces": [
+        "310000",
+        "320000",
+        "330000",
+        "340000",
+        "350000",
+        "360000",
+        "370000"
+      ],
+      "definition_zh": "包含上海、江苏、浙江、安徽、福建、江西、山东（7个省级行政区，不含采用独立统计体系的台湾地区）。"
+    },
+    {
+      "id": "central",
+      "name_zh": "华中",
+      "full_zh": "华中地区",
+      "name_en": "Central China",
+      "order": 4,
+      "provinces": [
+        "410000",
+        "420000",
+        "430000"
+      ],
+      "definition_zh": "包含河南、湖北、湖南（3个省级行政区）。"
+    },
+    {
+      "id": "south",
+      "name_zh": "华南",
+      "full_zh": "华南地区",
+      "name_en": "South China",
+      "order": 5,
+      "provinces": [
+        "440000",
+        "450000",
+        "460000"
+      ],
+      "definition_zh": "包含广东、广西、海南（3个省级行政区，不含采用独立统计体系的香港、澳门特别行政区）。"
+    },
+    {
+      "id": "southwest",
+      "name_zh": "西南",
+      "full_zh": "西南地区",
+      "name_en": "Southwest China",
+      "order": 6,
+      "provinces": [
+        "500000",
+        "510000",
+        "520000",
+        "530000",
+        "540000"
+      ],
+      "definition_zh": "包含重庆、四川、贵州、云南、西藏（5个省级行政区）。"
+    },
+    {
+      "id": "northwest",
+      "name_zh": "西北",
+      "full_zh": "西北地区",
+      "name_en": "Northwest China",
+      "order": 7,
+      "provinces": [
+        "610000",
+        "620000",
+        "630000",
+        "640000",
+        "650000"
+      ],
+      "definition_zh": "包含陕西、甘肃、青海、宁夏、新疆（5个省级行政区）。"
+    }
+  ],
+  "provinces": [
+    {
+      "code": "110000",
+      "name_zh": "北京市",
+      "short_zh": "北京",
+      "name_en": "Beijing",
+      "pinyin": "beijing",
+      "region_group": "north",
+      "economic_zone": "east",
+      "type": "municipality"
+    },
+    {
+      "code": "120000",
+      "name_zh": "天津市",
+      "short_zh": "天津",
+      "name_en": "Tianjin",
+      "pinyin": "tianjin",
+      "region_group": "north",
+      "economic_zone": "east",
+      "type": "municipality"
+    },
+    {
+      "code": "130000",
+      "name_zh": "河北省",
+      "short_zh": "河北",
+      "name_en": "Hebei",
+      "pinyin": "hebei",
+      "region_group": "north",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "140000",
+      "name_zh": "山西省",
+      "short_zh": "山西",
+      "name_en": "Shanxi",
+      "pinyin": "shanxi",
+      "region_group": "north",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "150000",
+      "name_zh": "内蒙古自治区",
+      "short_zh": "内蒙古",
+      "name_en": "Inner Mongolia",
+      "pinyin": "neimenggu",
+      "region_group": "north",
+      "economic_zone": "west",
+      "type": "autonomous_region"
+    },
+    {
+      "code": "210000",
+      "name_zh": "辽宁省",
+      "short_zh": "辽宁",
+      "name_en": "Liaoning",
+      "pinyin": "liaoning",
+      "region_group": "northeast",
+      "economic_zone": "northeast",
+      "type": "province"
+    },
+    {
+      "code": "220000",
+      "name_zh": "吉林省",
+      "short_zh": "吉林",
+      "name_en": "Jilin",
+      "pinyin": "jilin",
+      "region_group": "northeast",
+      "economic_zone": "northeast",
+      "type": "province"
+    },
+    {
+      "code": "230000",
+      "name_zh": "黑龙江省",
+      "short_zh": "黑龙江",
+      "name_en": "Heilongjiang",
+      "pinyin": "heilongjiang",
+      "region_group": "northeast",
+      "economic_zone": "northeast",
+      "type": "province"
+    },
+    {
+      "code": "310000",
+      "name_zh": "上海市",
+      "short_zh": "上海",
+      "name_en": "Shanghai",
+      "pinyin": "shanghai",
+      "region_group": "east",
+      "economic_zone": "east",
+      "type": "municipality"
+    },
+    {
+      "code": "320000",
+      "name_zh": "江苏省",
+      "short_zh": "江苏",
+      "name_en": "Jiangsu",
+      "pinyin": "jiangsu",
+      "region_group": "east",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "330000",
+      "name_zh": "浙江省",
+      "short_zh": "浙江",
+      "name_en": "Zhejiang",
+      "pinyin": "zhejiang",
+      "region_group": "east",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "340000",
+      "name_zh": "安徽省",
+      "short_zh": "安徽",
+      "name_en": "Anhui",
+      "pinyin": "anhui",
+      "region_group": "east",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "350000",
+      "name_zh": "福建省",
+      "short_zh": "福建",
+      "name_en": "Fujian",
+      "pinyin": "fujian",
+      "region_group": "east",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "360000",
+      "name_zh": "江西省",
+      "short_zh": "江西",
+      "name_en": "Jiangxi",
+      "pinyin": "jiangxi",
+      "region_group": "east",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "370000",
+      "name_zh": "山东省",
+      "short_zh": "山东",
+      "name_en": "Shandong",
+      "pinyin": "shandong",
+      "region_group": "east",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "410000",
+      "name_zh": "河南省",
+      "short_zh": "河南",
+      "name_en": "Henan",
+      "pinyin": "henan",
+      "region_group": "central",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "420000",
+      "name_zh": "湖北省",
+      "short_zh": "湖北",
+      "name_en": "Hubei",
+      "pinyin": "hubei",
+      "region_group": "central",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "430000",
+      "name_zh": "湖南省",
+      "short_zh": "湖南",
+      "name_en": "Hunan",
+      "pinyin": "hunan",
+      "region_group": "central",
+      "economic_zone": "central",
+      "type": "province"
+    },
+    {
+      "code": "440000",
+      "name_zh": "广东省",
+      "short_zh": "广东",
+      "name_en": "Guangdong",
+      "pinyin": "guangdong",
+      "region_group": "south",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "450000",
+      "name_zh": "广西壮族自治区",
+      "short_zh": "广西",
+      "name_en": "Guangxi",
+      "pinyin": "guangxi",
+      "region_group": "south",
+      "economic_zone": "west",
+      "type": "autonomous_region"
+    },
+    {
+      "code": "460000",
+      "name_zh": "海南省",
+      "short_zh": "海南",
+      "name_en": "Hainan",
+      "pinyin": "hainan",
+      "region_group": "south",
+      "economic_zone": "east",
+      "type": "province"
+    },
+    {
+      "code": "500000",
+      "name_zh": "重庆市",
+      "short_zh": "重庆",
+      "name_en": "Chongqing",
+      "pinyin": "chongqing",
+      "region_group": "southwest",
+      "economic_zone": "west",
+      "type": "municipality"
+    },
+    {
+      "code": "510000",
+      "name_zh": "四川省",
+      "short_zh": "四川",
+      "name_en": "Sichuan",
+      "pinyin": "sichuan",
+      "region_group": "southwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "520000",
+      "name_zh": "贵州省",
+      "short_zh": "贵州",
+      "name_en": "Guizhou",
+      "pinyin": "guizhou",
+      "region_group": "southwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "530000",
+      "name_zh": "云南省",
+      "short_zh": "云南",
+      "name_en": "Yunnan",
+      "pinyin": "yunnan",
+      "region_group": "southwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "540000",
+      "name_zh": "西藏自治区",
+      "short_zh": "西藏",
+      "name_en": "Xizang",
+      "pinyin": "xizang",
+      "region_group": "southwest",
+      "economic_zone": "west",
+      "type": "autonomous_region"
+    },
+    {
+      "code": "610000",
+      "name_zh": "陕西省",
+      "short_zh": "陕西",
+      "name_en": "Shaanxi",
+      "pinyin": "shaanxi",
+      "region_group": "northwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "620000",
+      "name_zh": "甘肃省",
+      "short_zh": "甘肃",
+      "name_en": "Gansu",
+      "pinyin": "gansu",
+      "region_group": "northwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "630000",
+      "name_zh": "青海省",
+      "short_zh": "青海",
+      "name_en": "Qinghai",
+      "pinyin": "qinghai",
+      "region_group": "northwest",
+      "economic_zone": "west",
+      "type": "province"
+    },
+    {
+      "code": "640000",
+      "name_zh": "宁夏回族自治区",
+      "short_zh": "宁夏",
+      "name_en": "Ningxia",
+      "pinyin": "ningxia",
+      "region_group": "northwest",
+      "economic_zone": "west",
+      "type": "autonomous_region"
+    },
+    {
+      "code": "650000",
+      "name_zh": "新疆维吾尔自治区",
+      "short_zh": "新疆",
+      "name_en": "Xinjiang",
+      "pinyin": "xinjiang",
+      "region_group": "northwest",
+      "economic_zone": "west",
+      "type": "autonomous_region"
+    }
+  ],
+  "coverage_disclaimer": {
+    "zh": "本平台分省年度统计数据来源于国家统计局，覆盖中国大陆31个省、自治区、直辖市。香港特别行政区、澳门特别行政区和台湾地区采用独立统计制度，国家统计局分省年度汇总数据不包含上述地区。数据缺失仅反映统计口径覆盖范围，不构成任何地理归属判断。",
+    "en": "Provincial annual statistics on this platform are sourced from the National Bureau of Statistics of China (NBS) and cover the 31 provincial-level administrative divisions of Mainland China. Hong Kong SAR, Macao SAR, and Taiwan maintain independent statistical systems and are not included in NBS provincial series; missing values reflect statistical coverage only and carry no geographic or territorial judgment."
+  }
+}

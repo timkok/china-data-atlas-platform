@@ -1,0 +1,37 @@
+name: Scheduled NBS Official Data Check
+
+on:
+  schedule:
+    # Run monthly on the 1st at 03:00 UTC (never overwrites main automatically)
+    - cron: "0 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-official-data:
+    name: Re-ingest NBS, Run Quality Gate & Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pipeline dependencies
+        working-directory: pipeline
+        run: |
+          python -m venv .venv
+          .venv/bin/pip install --upgrade pip
+          .venv/bin/pip install -r requirements.txt
+      - name: Fetch latest official NBS snapshots & run Data Quality Gate
+        working-directory: pipeline
+        run: |
+          .venv/bin/python scripts/ingest_nbs.py
+          .venv/bin/python scripts/build_warehouse.py
+          .venv/bin/python scripts/quality_gate.py
+          .venv/bin/python scripts/export_web_data.py
+          .venv/bin/pytest -v tests/test_quality_gate.py
+      - name: Check for dataset updates
+        run: |
+          git status --short pipeline/raw web/public/data docs/DATA_DICTIONARY.md

@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-11-24T02:47:03Z",
+  "overall_status": "WARN",
+  "total_checks": 11,
+  "passed_checks": 10,
+  "warnings": 1,
+  "failures": 0,
+  "checks": [
+    {
+      "id": "source_url_reachability",
+      "name_zh": "官方数据来源链接可达性检查",
+      "name_en": "Official Source URL Reachability",
+      "status": "PASS",
+      "summary_zh": "国家统计局数据发布库 (https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData) 连通性校验通过。",
+      "summary_en": "Verified live HTTP 200 response from NBS official data API (https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData)."
+    },
+    {
+      "id": "data_type_and_range",
+      "name_zh": "数据类型与数值域合理性检查",
+      "name_en": "Data Type & Numeric Domain Range",
+      "status": "PASS",
+      "summary_zh": "全部14个指标数值均为合法数值且符合业务域约束（比率∈[0,100]，非负指标≥0）。",
+      "summary_en": "All 14 indicators pass strict numeric type and domain range bounds."
+    },
+    {
+      "id": "region_code_gbt2260",
+      "name_zh": "行政区划代码（GB/T 2260）完整性校验",
+      "name_en": "GB/T 2260 Region Code Validation",
+      "status": "PASS",
+      "summary_zh": "精确匹配中国大陆31个省级行政区与全国基准（共 32 个标准区划代码）。",
+      "summary_en": "Exact match to all 31 Mainland provincial divisions plus National benchmark (32 codes)."
+    },
+    {
+      "id": "year_bounds",
+      "name_zh": "统计年度范围与单调性校验",
+      "name_en": "Year Bounds & Coverage Audit",
+      "status": "PASS",
+      "summary_zh": "全部有效观测年度严格位于 2000–2025 年区间，未见非法年份。",
+      "summary_en": "All non-null observations fall strictly within 2000–2025."
+    },
+    {
+      "id": "unit_consistency",
+      "name_zh": "统计单位与国家统计局原始元数据核验",
+      "name_en": "Unit Consistency Against Raw NBS Metadata",
+      "status": "PASS",
+      "summary_zh": "全部指标的原始统计单位（du_name）与转换规则一致，未发生量级错配。",
+      "summary_en": "All indicator raw NBS units (du_name) verified against configured transformations."
+    },
+    {
+      "id": "duplicate_records",
+      "name_zh": "主键唯一性（无重复记录）检查",
+      "name_en": "Primary Key Duplicate Check",
+      "status": "PASS",
+      "summary_zh": "（指标ID + 地区代码 + 年度）联合主键零重复记录。",
+      "summary_en": "Zero duplicate (indicator_id, region_code, year) records detected."
+    },
+    {
+      "id": "missing_value_transparency",
+      "name_zh": "缺失值保留与覆盖率审计（零插值填造）",
+      "name_en": "Missing Value Transparency Audit (Zero Imputation)",
+      "status": "PASS",
+      "summary_zh": "分省面板共 10102/11129 条有效官方记录（覆盖率 90.77%），1027 处官方未公布单元格如实留空并展示缺失说明。",
+      "summary_en": "10102/11129 provincial observations verified (90.77% coverage); 1027 unreleased official cells preserved transparently as null."
+    },
+    {
+      "id": "abnormal_yoy_spike_audit",
+      "name_zh": "年度异常波动监测（|同比|>35%）",
+      "name_en": "Abnormal YoY Fluctuation Detector (>35%)",
+      "status": "WARN",
+      "summary_zh": "全库检出 24 条非断点年份单年波动超35%的官方观测（主要为2001–2006年高校扩招期小基数省份翻倍增长及2016年全面两孩生育高峰），已逐一核对原始数据并保留官方值。",
+      "summary_en": "Audited 24 non-break observations exceeding 35% YoY change (primarily 2001–2006 small-base university expansion and the 2016 two-child policy peak); raw NBS values preserved.",
+      "samples": [
+        {
+          "slug": "higher-ed-institutions",
+          "region": "海南省",
+          "year": 2001,
+          "value": 9.0,
+          "yoy_pct": 80.0
+        },
+        {
+          "slug": "higher-ed-institutions",
+          "region": "天津市",
+          "year": 2001,
+          "value": 33.0,
+          "yoy_pct": 57.14
+        },
+        {
+          "slug": "higher-ed-institutions",
+          "region": "浙江省",
+          "year": 2002,
+          "value": 61.0,
+          "yoy_pct": 56.41
+        },
+        {
+          "slug": "higher-ed-enrollment",
+          "region": "浙江省",
+          "year": 2001,
+          "value": 29.31,
+          "yoy_pct": 52.34
+        },
+        {
+          "slug": "higher-ed-institutions",
+          "region": "西藏自治区",
+          "year": 2006,
+          "value": 6.0,
+          "yoy_pct": 50.0
+        },
+        {
+          "slug": "higher-ed-institutions",
+          "region": "宁夏回族自治区",
+          "year": 2002,
+          "value": 12.0,
+          "yoy_pct": 50.0
+        },
+        {
+          "slug": "birth-rate",
+          "region": "山东省",
+          "year": 2016,
+          "value": 17.89,
+          "yoy_pct": 42.55
+        },
+        {
+          "slug": "higher-ed-institutions",
+          "region": "江西省",
+          "year": 2002,
+          "value": 47.0,
+          "yoy_pct": 42.42
+        }
+      ]
+    },
+    {
+      "id": "caliber_break_yoy_guard",
+      "name_zh": "统计口径断点同比保护校验",
+      "name_en": "Statistical Break YoY Protection",
+      "status": "PASS",
+      "summary_zh": "所有标注为统计口径断点的年份均已自动禁止跨口径同比计算，杜绝误导性增速。",
+      "summary_en": "All breaking methodology years strictly suppress incomparable YoY growth calculations."
+    },
+    {
+      "id": "raw_to_warehouse_consistency",
+      "name_zh": "原始官方快照与数据仓库逐值一致性核验",
+      "name_en": "Raw NBS Snapshot vs Warehouse Exact Consistency",
+      "status": "PASS",
+      "summary_zh": "抽核 42 组跨省（京/粤/川）跨指标原始快照值与入库值，100% 精确一致（零偏差）。",
+      "summary_en": "Verified 42 cross-indicator spot checks (Beijing/Guangdong/Sichuan) between raw NBS JSON and DuckDB with 0 discrepancies."
+    },
+    {
+      "id": "conditional_additivity",
+      "name_zh": "可加性指标分省汇总与全国基准核对",
+      "name_en": "Conditional Additivity Check (Additive Indicators Only)",
+      "status": "PASS",
+      "summary_zh": "仅对口径一致的可加性指标进行31省加总核验：higher-ed-enrollment(2024): 31省合计=3891.28 vs 全国=3891.30 (差异0.00%)；higher-ed-institutions(2024): 31省合计=2870.00 vs 全国=2870.00 (差异0.00%)（GDP/社零等按统一核算制度不强行要求相等）。",
+      "summary_en": "Verified provincial-to-national sums strictly for additive indicators: higher-ed-enrollment(2024): 31省合计=3891.28 vs 全国=3891.30 (差异0.00%); higher-ed-institutions(2024): 31省合计=2870.00 vs 全国=2870.00 (差异0.00%)."
+    }
+  ]
+}
