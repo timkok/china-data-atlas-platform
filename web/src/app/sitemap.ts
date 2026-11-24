@@ -1,8 +1,10 @@
 import type { MetadataRoute } from "next";
 import { getCatalog, getRegions } from "@/lib/data";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://china-data-atlas.vercel.app";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://timkok.github.io/china-data-atlas-platform";
   const catalog = getCatalog();
   const regions = getRegions();
   const lastModified = new Date(catalog.generated_at);

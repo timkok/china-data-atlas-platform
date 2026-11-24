@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, Download, Search } from "lucide-react";
 import type { CatalogData, CategoryId } from "@/lib/types";
 import { useLocale } from "@/lib/i18n";
-import { formatValueWithUnit } from "@/lib/format";
+import { formatValueWithUnit, withBasePath } from "@/lib/format";
 
 interface Props {
   catalog: CatalogData;
@@ -163,7 +163,7 @@ export function IndicatorDirectoryClient({ catalog, initialCategory = "all" }: P
                 </div>
                 <div className="flex items-center gap-2">
                   <a
-                    href={`/data/csv/${ind.slug}.csv`}
+                    href={withBasePath(`/data/csv/${ind.slug}.csv`)}
                     download={`china-data-atlas-${ind.slug}.csv`}
                     className="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:text-blue-700 hover:border-blue-300 transition-colors"
                     title={t("下载 CSV", "Download CSV")}

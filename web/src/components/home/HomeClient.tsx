@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import type { CatalogData, IndicatorDataset, RegionsData } from "@/lib/types";
 import { useLocale } from "@/lib/i18n";
-import { formatValueWithUnit } from "@/lib/format";
+import { formatValueWithUnit, withBasePath } from "@/lib/format";
 import { GlobalSearchModal } from "@/components/search/GlobalSearchModal";
 import { FeaturedStoryWidget } from "./FeaturedStoryWidget";
 
@@ -437,7 +437,7 @@ export function HomeClient({ catalog, regions, featuredDatasets }: Props) {
                 )}
               </p>
               <a
-                href="/data/csv/gdp.csv"
+                href={withBasePath("/data/csv/gdp.csv")}
                 download="china-data-atlas-gdp.csv"
                 className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 hover:underline"
               >

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUpDown, ChevronDown, ChevronUp, Database, Download, ExternalLink, Search, Table2 } from "lucide-react";
 import type { IndicatorDataset, RegionsData } from "@/lib/types";
 import { useLocale } from "@/lib/i18n";
-import { formatDataStatus, formatNumber, formatSignedPct, getAccentHex } from "@/lib/format";
+import { formatDataStatus, formatNumber, formatSignedPct, getAccentHex, withBasePath } from "@/lib/format";
 
 interface Props {
   dataset: IndicatorDataset;
@@ -164,7 +164,7 @@ export function DataExplorer({ dataset, regions, defaultYear }: Props) {
 
         <div className="flex flex-wrap items-center gap-2">
           <a
-            href={`/data/csv/${dataset.slug}.csv`}
+            href={withBasePath(`/data/csv/${dataset.slug}.csv`)}
             download={`china-data-atlas-${dataset.slug}.csv`}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-700 text-white text-xs font-semibold hover:bg-blue-800 transition-colors"
             data-testid="explorer-csv-download"

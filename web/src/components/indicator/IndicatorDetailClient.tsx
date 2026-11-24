@@ -21,6 +21,7 @@ import {
   formatSignedDiff,
   formatSignedPct,
   formatValueWithUnit,
+  withBasePath,
 } from "@/lib/format";
 import { RegionalTileMatrix } from "@/components/charts/RegionalTileMatrix";
 import { TrendLineChart } from "@/components/charts/TrendLineChart";
@@ -211,7 +212,7 @@ export function IndicatorDetailClient({
               {t("引用数据", "Cite")}
             </a>
             <a
-              href={`/data/csv/${dataset.slug}.csv`}
+              href={withBasePath(`/data/csv/${dataset.slug}.csv`)}
               download={`china-data-atlas-${dataset.slug}.csv`}
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-700 text-white text-xs font-semibold hover:bg-blue-800 shadow-xs transition-colors"
               data-testid="hero-csv-download"

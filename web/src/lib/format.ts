@@ -114,3 +114,9 @@ export function isDarkHex(hex: string): boolean {
   const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
   return luminance < 0.55;
 }
+
+export function withBasePath(path: string): string {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  if (!base) return path;
+  return path.startsWith("/") ? `${base}${path}` : `${base}/${path}`;
+}
